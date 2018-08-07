@@ -1,20 +1,44 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Clickr</title>
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-    <link rel="stylesheet" href="clickr.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<title>Clickr</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet" />
+	<link rel="stylesheet" href="main.css" />
 </head>
+
 <body>
-    <main>
-        <div id="display"></div>
+	<div id="overlay" class="overlay">
+		<button id="overlay-btn" class="btn">Try again</button>
 
-        <button id="button">Clickr</button>
+		<table id="score-table" class="score-table">
+			<thead>
+				<tr>
+					<th>№</th>
+					<th>Score</th>
+				</tr>
+			</thead>
+		</table>
+	</div>
 
-        <div id="counter"></div>
-    </main>
-    
-    <script src="clickr.js"></script>
+	<main>
+		<div id="display" class="display">
+			<div class="display-time">Time:
+				<span>0</span>s</div>
+			<div class="display-score">Clicks:
+				<span>0</span>
+			</div>
+		</div>
+
+		<button id="button" class="btn btn-before-game">Clickr</button>
+	</main>
+
+	<script src="clickrGame.js"></script>
 </body>
+
 </html>

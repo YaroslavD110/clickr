@@ -1,8 +1,21 @@
 {
-  "name": "clickr",
+  "name": "ClickrGame",
   "version": "1.0.0",
   "main": "index.js",
+  "author": "tangerine_",
   "license": "MIT",
+  "scripts": {
+    "dev": "webpack-dev-server --mode=development --open --color --info",
+    "build": "webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tangerine69/clickr.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tangerine69/clickr/issues"
+  },
+  "homepage": "https://github.com/tangerine69/clickr#readme",
   "devDependencies": {
     "autoprefixer": "^9.1.0",
     "babel-core": "^6.26.3",

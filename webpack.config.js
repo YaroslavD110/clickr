@@ -6,11 +6,12 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "search-script.js"
+    filename: "clickrGame.js"
   },
   devServer: {
     port: 3000,
-    contentBase: path.resolve(__dirname, "dist")
+    contentBase: path.resolve(__dirname, "dist"),
+    compress: true
   },
   module: {
     rules: [
